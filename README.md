@@ -1,9 +1,8 @@
 # MEng-Module-1
 
--src
- -com.calculator.operations
-    -Calculator.java
- -Main.java
+Principal Files:
+- Calculator.java
+- Main.java
 
 Concepts demonstrated in the code example:
 
