@@ -1,9 +1,9 @@
 # MEng-Module-1
 
-src/
- |-com.calculator.operations/
-    |-Calculator.java
- |-Main.java
+-src
+ -com.calculator.operations
+    -Calculator.java
+ -Main.java
 
 Concepts demonstrated in the code example:
 
@@ -13,7 +13,7 @@ Concepts demonstrated in the code example:
 4) Local Consequences: Any future change into the Calculator methods won't impact entire functionality
 5) Duplication: There are an small "duplication between "showResult" and "showMessage" methods
 6) Symmetry: Calculator's methods are intended to follow a balanced symmetry (all methods have same parameters and same life-time)
-7) Declarative Expression: The program it-self is intended to express their purpose by its own
+7) Declarative Expression: The program it-self is intended to express its purpose by its own
 8) Rate of Change: The elements have not explicit code separation by change rate
 
 Reference: 
