@@ -1,5 +1,10 @@
 # MEng-Module-1
 
+src/
+ |-com.calculator.operations/
+    |-Calculator.java
+ |-Main.java
+
 Concepts demonstrated in the code example:
 
 1) Communication: The program is self-explanatory since is intended to help people to do simple calculations with two positive numbers
@@ -12,5 +17,5 @@ Concepts demonstrated in the code example:
 8) Rate of Change: The elements have not explicit code separation by change rate
 
 Reference: 
- Kent Beck. Implementation Patterns. The Pragmatic Programmers, 2008.
- Max Kanat-Alexander. Code Simplicity. O'Reilly, 2012.
+ - Kent Beck. Implementation Patterns. The Pragmatic Programmers, 2008.
+ - Max Kanat-Alexander. Code Simplicity. O'Reilly, 2012.
