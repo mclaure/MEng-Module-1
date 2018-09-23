@@ -4,17 +4,36 @@ Principal Files:
 - Calculator.java
 - Main.java
 
-Concepts demonstrated in the code example:
+Corrections and Observations using "Clean Code" suggestions:
 
-1) Communication: The program is self-explanatory since is intended to help people to do simple calculations with two positive numbers
-2) Simplicity: The "Main" method uses the basic functionality of the program as simple as possible
-3) Flexibility: The "Calculator.java" class is able to grow to satisfy new requirements or to improve the existing ones
-4) Local Consequences: Any future change into the Calculator methods won't impact entire functionality
-5) Duplication: There are an small "duplication between "showResult" and "showMessage" methods
-6) Symmetry: Calculator's methods are intended to follow a balanced symmetry (all methods have same parameters and same life-time)
-7) Declarative Expression: The program it-self is intended to express its purpose by its own
-8) Rate of Change: The elements have not explicit code separation by change rate
+Chapter 1: CLEAN CODE
+---------------------
+Issues found with the following items: 
+- none
 
-Reference: 
- - Kent Beck. Implementation Patterns. The Pragmatic Programmers, 2008.
- - Max Kanat-Alexander. Code Simplicity. O'Reilly, 2012.
+
+Chapter 2: MEANINGFUL NAMES
+----------------------------
+Issues found with the following items:
+
+1) Use Intention-Reveling names
+2) Avoid Desinformation
+3) Make Meaningful Distinctions
+4) Use Pronunceable Names
+5) Use Searchable Names
+
+
+Chapter 3: FUNCTIONS
+--------------------
+Issues found with the following items:
+
+1) Small!
+2) One level of abstraction per function
+3) Function Arguments
+
+Chapter 4: COMMENTS
+--------------------
+There were missing comments:
+
+1) Informative comments
+2) Clarification

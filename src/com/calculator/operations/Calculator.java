@@ -2,51 +2,65 @@
 package com.calculator.operations;
 
 public class Calculator {
-	int _a;
-	int _b;
+	int _firstNumber; //First Number value that is going to be calculate
+	int _secondNumber;//Second Number value that is going to be calculate
 	
-	public Calculator(int a, int b) {
-		_a = a;
-		_b = b;
-		showMessage("Calculator Initialized with: a=" + a + " and b=" + b);		
+	/*
+	 * Initialize the _firstNumber and _secondNumber
+	 * */
+	public Calculator(int firstNumber, int secondNumber) {
+	    _firstNumber = firstNumber;
+		_secondNumber = secondNumber;
+		showMessage("Calculator Initialized with [First Number=" + firstNumber + " , Second Number=" + secondNumber + "]");		
 	}
 
+	/*
+	 * Ads _firstNumber and _secondNumber
+	 * */
 	public void add() {
-		if(validNumbers(_a,_b)) {
-			showResult("adition", (_a + _b));
+		if(isAPositiveNumber(_firstNumber) && isAPositiveNumber(_secondNumber)) {
+			showMessage("adition", (_firstNumber + _secondNumber));
 		}
 	}	
-	
+	/*
+	 * Substract _firstNumber and _secondNumber
+	 * */	
 	public void substract() {
-		if(validNumbers(_a, _b)) {
-			if(_a > _b) {
-				showResult("substraction", (_a - _b));
+		if(isAPositiveNumber(_firstNumber) && isAPositiveNumber(_secondNumber)) {
+			if(_firstNumber > _secondNumber) {
+				showMessage("substraction", (_firstNumber - _secondNumber));
 			}
 			else {
 				showMessage("Not a valid positive substraction");
 			}	
 		}
 	}
-	
+	/*
+	 * Substract _firstNumber and _secondNumber
+	 * */	
 	public void multiply() {
-		if(validNumbers(_a,_b)) {
-			showResult("multiply", (_a * _b));
+		if(isAPositiveNumber(_firstNumber) && isAPositiveNumber(_secondNumber)) {
+			showMessage("multiply", (_firstNumber * _secondNumber));
 		}
 	}	
-	
+	/*
+	 * Substract _firstNumber and _secondNumber
+	 * */	
 	public void divide() {
-		if(validNumbers(_a, _b)) {
-			if(_b != 0) {
-				showResult("divide", (_a / _b));
+		if(isAPositiveNumber(_firstNumber) && isAPositiveNumber(_secondNumber)) {
+			if(_secondNumber > 0) {
+				showMessage("divide", (_firstNumber / _secondNumber));
 			}
 			else {
 				showMessage("Not a valid divide");
 			}	
 		}
 	}	
-	
-	private boolean validNumbers(int a, int b) {
-		if((a > 0) && (b > 0)) {
+	/*
+	 * validate a positive number on TRUE
+	 * */	
+	private boolean isAPositiveNumber(int value) {
+		if(value > 0) {
 			return true;
 		}
 		else {
@@ -54,11 +68,17 @@ public class Calculator {
 			return false;
 		}	
 	}	
-	
-	private void showResult(String operation, int result) {
+
+	/*
+	 * Shows a compound message indicating operation executed and its result 
+	 * */
+	private void showMessage(String operation, int result) {
 		showMessage("The result of " + operation + " is: " + result);
 	}
 	
+	/*
+	 * Shows a compound message
+	 * */
 	private void showMessage(String message) {
 		System.out.println(message);
 	}	
